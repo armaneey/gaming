@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(img/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+h1{
+    font-weight: 900;
+    color: rgb(95, 69, 38);
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: orchid;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.cell:hover {
+    background-color: aqua;
+}
+
+.cell :active{
+    background-color: aqua;
+}
+
+.message{
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: burlywood;
+    font-weight: 800;
+}
+
+.scoreboard{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.button{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:hsl(0, 0%, 84%);
+    cursor: pointer;
+    border-radius: 10px;
+}
